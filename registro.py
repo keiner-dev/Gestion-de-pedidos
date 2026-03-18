@@ -1,0 +1,1 @@
+cliente = input("Registrar cliente: ")
