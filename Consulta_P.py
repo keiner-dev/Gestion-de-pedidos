@@ -1,4 +1,4 @@
-from uso.gestion_datos import cargar_pedidos
+from gestion_datos import cargar_pedidos
 
 def main():
     """Carga y muestra todos los pedidos registrados."""
@@ -18,6 +18,3 @@ def main():
             f"Total: ${detalles.get('total', 0):.2f}"
         )
     print("--------------------------------------\n")
-
-if __name__ == "__main__":
-    main()

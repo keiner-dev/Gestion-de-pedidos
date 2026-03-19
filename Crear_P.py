@@ -1,4 +1,4 @@
-from uso.gestion_datos import cargar_pedidos, guardar_pedidos
+from gestion_datos import cargar_pedidos, guardar_pedidos
 
 def main():
     """Crea un nuevo pedido y lo guarda."""
@@ -24,6 +24,3 @@ def main():
     
     guardar_pedidos(pedidos)
     print(f"\n¡Pedido {nuevo_id} guardado con éxito!")
-
-if __name__ == "__main__":
-    main()
