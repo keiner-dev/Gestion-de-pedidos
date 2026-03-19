@@ -37,8 +37,8 @@ while True:
         print("ID de tu producto:" , Product_ID)
         print("Nombre de tu producto:" , Produt_Name)
         print("Precio de tu producto:" , Unit_Price)
-  
-  
+
+
     except ValueError:
         print("Ingrese un valor válido")
     print(Green + " ✨ Tu producto ha sido registrado con éxito ✨ " + Reset)
