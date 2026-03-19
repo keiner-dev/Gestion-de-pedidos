@@ -1,6 +1,6 @@
 from gestion_datos import cargar_pedidos
 
-def main():
+def Consultar_P():
     """Carga y muestra todos los pedidos registrados."""
     pedidos = cargar_pedidos()
 
@@ -18,3 +18,5 @@ def main():
             f"Total: ${detalles.get('total', 0):.2f}"
         )
     print("--------------------------------------\n")
+
+main ()

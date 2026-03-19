@@ -1,6 +1,6 @@
 from gestion_datos import cargar_pedidos, guardar_pedidos
 
-def main():
+def Crear_P():
     """Crea un nuevo pedido y lo guarda."""
     pedidos = cargar_pedidos()
     nuevo_id = f"P{len(pedidos) + 1:03d}"
@@ -24,3 +24,4 @@ def main():
     
     guardar_pedidos(pedidos)
     print(f"\n¡Pedido {nuevo_id} guardado con éxito!")
+
