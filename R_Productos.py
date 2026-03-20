@@ -18,12 +18,12 @@ while True:
 
         if P_Producto <= 0:
             print(Yellow + "El valor del producto no es válido, intenta de nuevo" + Reset)
-
+        
         C_Producto = int(input(Pink + "💖 Escribe la cantidad del producto 💖\n⭐   " + Reset))
         if C_Producto <= 0: 
             print(Yellow + "Ingresa una cantidad válida" + Reset)
-            continue
-        break
+            break
+        
     except ValueError:
-        print("Ingrese un valor valido")
+        print("Ingrese un valor válido")
 print(Green + " ✨ Tu producto ha sido registrado con éxito ✨ " + Reset)
