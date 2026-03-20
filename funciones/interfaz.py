@@ -54,9 +54,9 @@ def obtener_detalles_pedido(clientes, productos):
 
 def mostrar_pedidos(pedidos, clientes, productos):
     """Muestra una lista de todos los pedidos."""
-    print(VERDE + "--- Pedidos Registrados ---" + RESET)
+    print(VERDE + "--- Pedidos Registrados ---\n" + RESET)
     if not pedidos:
-        print("⚠️ No se encontraron pedidos. ⚠️ ")
+        print("⚠️ No se encontraron pedidos. ⚠️ \n")
         return
 
     for id_pedido, datos_pedido in pedidos.items():
@@ -74,31 +74,31 @@ def mostrar_pedidos(pedidos, clientes, productos):
 
 def mostrar_reporte(reporte):
     """Muestra el reporte final."""
-    print(VERDE + "--- Reporte Final ---" + RESET)
-    print(f"Total de Pedidos: {reporte['total_pedidos']}")
-    print(f"Ingresos Totales: ${reporte['ingresos_totales']:.2f}")
+    print(VERDE + "--- Reporte Final ---\n" + RESET)
+    print(f"Total de Pedidos: {reporte['total_pedidos']}\n")
+    print(f"Ingresos Totales: ${reporte['ingresos_totales']:.2f}\n")
 
     print(VERDE + "--- Productos Vendidos ---" + RESET )
     if not reporte['productos_vendidos']:
-        print(AMARILLO + " ⚠️ No se vendieron productos. ⚠️ " + RESET )
+        print(AMARILLO + " ⚠️ No se vendieron productos. ⚠️ \n" + RESET )
     else:
         for nombre_producto, cantidad in reporte['productos_vendidos'].items():
-            print(f"- {nombre_producto}: {cantidad} unidades")
+            print(f"- {nombre_producto}: {cantidad} unidades\n")
 
     print(ROSA + "--- Pedidos por Cliente ---" + RESET )
     if not reporte['pedidos_por_cliente']:
-        print(" ⚠️ No se encontraron pedidos para ningún cliente. ⚠️")
+        print(" ⚠️ No se encontraron pedidos para ningún cliente. ⚠️\n")
     else:
         for id_cliente, ids_pedidos in reporte['pedidos_por_cliente'].items():
             nombre_cliente = reporte['clientes_raw'].get(id_cliente, {}).get('nombre', 'Desconocido')
-            print(f"Cliente: {nombre_cliente} (ID: {id_cliente})")
+            print(f"Cliente: {nombre_cliente} (ID: {id_cliente})\n")
             for id_pedido in ids_pedidos:
                 datos_pedido = reporte['pedidos_raw'].get(id_pedido)
                 if datos_pedido:
                     nombre_producto = reporte['productos_raw'].get(datos_pedido['id_producto'], ('N/A', 0))[0]
                     print(
-                        f"  - ID Pedido: {id_pedido}, Producto: {nombre_producto}, "
-                        f"Cantidad: {datos_pedido['cantidad']}, Total: ${datos_pedido['total']:.2f}"
+                        f"  - ID Pedido: {id_pedido}, Producto: {nombre_producto}, \n"
+                        f"Cantidad: {datos_pedido['cantidad']}, Total: ${datos_pedido['total']:.2f}\n"
                     )
 
     print("----------------------")

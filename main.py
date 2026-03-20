@@ -122,24 +122,14 @@ while continuar == "si":
             pedidos = gestion_pedidos.obtener_todos_los_pedidos()
             clientes = gestion_clientes.obtener_todos_los_clientes()
             productos = gestion_productos.obtener_todos_los_productos()
-            input("Precione ENTER para continuar")
-        
-            Limpiar_pantalla()
-            cargar()
-            Limpiar_pantalla()
-        
             interfaz.mostrar_pedidos(pedidos, clientes, productos)
+            input("Presione ENTER para continuar")
 
     elif opcion == '5':
             # Generar Reporte Final
             reporte = reportes.generar_reporte_final()
-            input("Precione ENTER para continuar")
-        
-            Limpiar_pantalla()
-            cargar()
-            Limpiar_pantalla()
-        
             interfaz.mostrar_reporte(reporte)
+            input("Presione ENTER para continuar")
 
     elif opcion == '6':
             print("Gracias por usar nuestro programa, bonito día.")
