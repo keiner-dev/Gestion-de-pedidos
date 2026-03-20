@@ -1,6 +1,7 @@
-import funciones.gestion_clientes as gestion_clientes, funciones.gestion_pedidos as gestion_pedidos, funciones.gestion_productos as gestion_productos, funciones.interfaz as interfaz, funciones.reportes as reportes
+import funciones.gestion_clientes as gestion_clientes, funciones.gestion_pedidos as gestion_pedidos, funciones.gestion_productos as gestion_productos, funciones.interfaz as interfaz, funciones.reportes as reportes 
 
 def main():
+
     """
     Función principal para ejecutar la aplicación.
     """
@@ -64,7 +65,7 @@ def main():
             interfaz.mostrar_reporte(reporte)
 
         elif opcion == '6':
-            print("Saliendo.")
+            print("Gracias por usar nuestro programa, bonito día.")
             break
 
         else:

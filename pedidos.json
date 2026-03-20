@@ -1,0 +1,14 @@
+{
+    "O001": {
+        "id_cliente": "C001",
+        "id_producto": "P001",
+        "cantidad": 1,
+        "total": 20000.0
+    },
+    "O002": {
+        "id_cliente": "C001",
+        "id_producto": "P001",
+        "cantidad": 1,
+        "total": 20000.0
+    }
+}
