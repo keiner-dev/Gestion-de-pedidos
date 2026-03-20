@@ -21,7 +21,7 @@ while continuar == "si":
             # Registrar Cliente
             nombre, email = interfaz.obtener_detalles_cliente()
             if not nombre or not email:
-                print("El nombre y el email son invalidos.")
+                print("El nombre o el email son invalidos.")
                 input("Precione ENTER para continuar ")
                 continue
                 
