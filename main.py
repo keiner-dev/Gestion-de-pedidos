@@ -5,8 +5,8 @@ from funciones.Iniciando import cargar
 """
 Función principal para ejecutar la aplicación.
 """
-continuar = "no"
-while continuar == "no":
+continuar = "si"
+while continuar == "si":
     Limpiar_pantalla()
     cargar()
     Limpiar_pantalla()
@@ -143,7 +143,7 @@ while continuar == "no":
 
     elif opcion == '6':
             print("Gracias por usar nuestro programa, bonito día.")
-            continuar = "si"
+            continuar = "no"
 
     else:
             print("Opción no válida, por favor intente de nuevo.")
