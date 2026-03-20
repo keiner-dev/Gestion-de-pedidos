@@ -1,4 +1,5 @@
-
-"""El sistema debe calcular el total de ingresos generados durante la jornada,
-sumando todos los pedidos registrados."""
-
+def Calculate_Revenue(Order):
+    total_orders = 0
+    for order in Orders:
+        total_orders += order["total"]
+    return total_orders
