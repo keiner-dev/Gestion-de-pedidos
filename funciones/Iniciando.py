@@ -22,4 +22,4 @@ def cargar():
         print(".", end="", flush=True)
 
 def Limpiar_pantalla():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('clear')
