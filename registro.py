@@ -22,5 +22,3 @@ def registrar_cliente():
         print(f"¡cliente '{nombre}' registrado con exito con el ID: {id_cliente}!")
         break
 #Llama la funcion para ejecutar el proceso de registro
-registrar_cliente()
-
