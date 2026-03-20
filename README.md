@@ -38,4 +38,4 @@ To run this project, make sure you have Python installed and simply run the main
 
 - Isac Alvarez
 - Maryuris Aragon
-- Keiner Ramires
+- Keiner Ramirez
