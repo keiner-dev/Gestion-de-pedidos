@@ -1,5 +1,4 @@
 import funciones.gestion_clientes as gestion_clientes, funciones.gestion_pedidos as gestion_pedidos, funciones.gestion_productos as gestion_productos, funciones.interfaz as interfaz, funciones.reportes as reportes
-
 from funciones.Iniciando import Limpiar_pantalla
 from funciones.Iniciando import cargar
 
