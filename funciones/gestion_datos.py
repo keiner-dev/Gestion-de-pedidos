@@ -8,10 +8,8 @@ ARCHIVO_PEDIDOS = 'pedidos.json'
 def cargar_datos(ruta_archivo):
     """
     Carga datos desde un archivo JSON.
-
     Args:
         ruta_archivo (str): La ruta al archivo JSON.
-
     Returns:
         dict: Los datos cargados desde el archivo JSON, o un diccionario vacío si el archivo no existe o está vacío.
     """
@@ -26,7 +24,6 @@ def cargar_datos(ruta_archivo):
 def guardar_datos(ruta_archivo, datos):
     """
     Guarda datos en un archivo JSON.
-
     Args:
         ruta_archivo (str): La ruta al archivo JSON.
         datos (dict): Los datos a guardar.

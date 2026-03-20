@@ -2,7 +2,7 @@ from .colores import GRIS, ROJO, VERDE, AMARILLO, ROSA, RESET, AZUL, CYAN
 
 def mostrar_menu():
     """Muestra el menú principal y obtiene la elección del usuario."""
-    print(AMARILLO + "🌸 Bienvenido al Sistema de Gestión de Pedidos 🌸" + RESET)
+    print(AMARILLO + "🌸 Bienvenido al Sistema de Gestión de Pedidos 🌸\n" + RESET)
     print(CYAN + "✨ Por favor, elija una opción ✨" + RESET)
     print(ROSA + " 👤 1. Registrar Cliente 👤 " + RESET )
     print(ROSA + " 📦 2. Registrar Producto 📦 " + RESET)

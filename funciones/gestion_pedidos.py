@@ -3,12 +3,10 @@ from . import gestion_datos
 def crear_pedido(id_cliente, id_producto, cantidad):
     """
     Crea un nuevo pedido.
-
     Args:
         id_cliente (str): El ID del cliente que realiza el pedido.
         id_producto (str): El ID del producto que se está pidiendo.
         cantidad (int): La cantidad del producto que se está pidiendo.
-
     Returns:
         tuple: Una tupla que contiene el ID del nuevo pedido y sus datos, o (None, None) if the product is not found.
     """
@@ -44,7 +42,6 @@ def crear_pedido(id_cliente, id_producto, cantidad):
 def obtener_todos_los_pedidos():
     """
     Recupera todos los pedidos registrados.
-
     Returns:
         dict: Un diccionario de todos los pedidos.
     """
