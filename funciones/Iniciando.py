@@ -5,7 +5,7 @@ import random
 
 def Iniciando():
     print(CYAN + "Iniciando ..." + RESET)
-    time.sleep(0.5)
+    time.sleep(1)
     
     # Conteo regresivo 
     print(VERDE + "3..." + RESET)
